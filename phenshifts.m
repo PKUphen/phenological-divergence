@@ -1,7 +1,7 @@
 clear all
 clc
 
-%% import data
+%% import phenological data
 load 'K:\workspace\data\plant_phen_deduplicateddata_.mat';% variables: 'dataset' and 'dscode'- the dataset name and ID;'phlist' and 'phcode'-phenology event name and ID;'splist' and 'spcode'- species name and ID; 'phenstan'-data; 'stlist'- site ID and locations.
 dstype=xlsread('K:\workspace\plantnetworkclass.xlsx','Sheet1','B2:C11');
 dasite=unique(phenstan(:,1:2),'rows');
